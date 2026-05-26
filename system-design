@@ -1,0 +1,44 @@
+#QuestionCompanies1Design a URL Shortener (TinyURL / Bit.ly)Amazon, Google, Microsoft, Adobe, PayPal2Design Twitter / News FeedFacebook, Amazon, LinkedIn, Twitter3Design WhatsApp / Messenger / Chat SystemFacebook, Amazon, Microsoft4Design YouTube / Netflix (Video Streaming)Google, Netflix, Amazon5Design InstagramFacebook, Amazon, Adobe6Design a Rate LimiterStripe, Amazon, Google, Agoda, PayPal7Design a Web CrawlerGoogle, Amazon, Microsoft8Design a Notification SystemAmazon, Facebook, Uber9Design Uber / Lyft (Ride-sharing)Uber, Amazon, Google10Design a Distributed Cache (like Redis/Memcached)Amazon, Google, Microsoft
+Tier 2 — Frequently Asked ⭐⭐
+#QuestionCompanies11Design Dropbox / Google DriveGoogle, Amazon, Dropbox12Design a Search Autocomplete (Typeahead)Google, Facebook, LinkedIn13Design Google Docs (Collaborative Editing)Google, Microsoft14Design Booking System (Agoda, Airbnb, BookMyShow)Agoda, Airbnb, Booking.com15Design a Payment System (PayPal / Stripe)PayPal, Stripe, JPMorgan16Design an E-commerce System (Amazon-like)Amazon, Flipkart, Adobe17Design a Distributed File System (HDFS-like)Google, Amazon, Microsoft18Design a Logging / Monitoring SystemAmazon, Microsoft, Datadog19Design Slack / DiscordSlack, Microsoft, Amazon20Design Online Code Editor / Judge (LeetCode)Google, Microsoft
+Tier 3 — Senior/Niche but Commonly Asked ⭐
+#QuestionCompanies21Design a Stock Trading PlatformJPMorgan, Goldman Sachs, Robinhood22Design a Distributed Job Scheduler (Cron at scale)Amazon, Google, Uber23Design a Recommendation SystemNetflix, Amazon, Spotify24Design an API GatewayAmazon, Microsoft25Design a Distributed Message Queue (Kafka-like)LinkedIn, Amazon, Uber26Design Zoom / Google Meet (Video Conferencing)Zoom, Google, Microsoft27Design Google MapsGoogle, Uber28Design a Leaderboard SystemAmazon, Gaming companies29Design PastebinMicrosoft, Amazon30Design a News AggregatorGoogle, Microsoft
+
+Low-Level Design (LLD) — Most Asked
+These test OOP design, design patterns, SOLID principles, and class modeling. Critical for Java interviews.
+Tier 1 — Most Common ⭐⭐⭐
+#QuestionCompanies1Design a Parking LotAmazon, Google, Microsoft, Adobe2Design an LRU CacheAmazon, Facebook, Microsoft, Adobe3Design an Elevator SystemAmazon, Microsoft, Adobe4Design a Library Management SystemAmazon, Adobe, JPMorgan5Design Tic-Tac-Toe / Chess / Snake GameMicrosoft, Amazon, Adobe6Design BookMyShow / Movie BookingAdobe, Amazon, Agoda7Design ATM MachineJPMorgan, PayPal, Goldman Sachs8Design SplitwiseAmazon, Adobe, Microsoft9Design a Vending MachineAmazon, Microsoft, Adobe10Design Logger / Logging FrameworkAmazon, Microsoft, JPMorgan
+Tier 2 — Common ⭐⭐
+#QuestionCompanies11Design a Food Delivery System (Swiggy/Zomato/UberEats)Uber, Amazon, Swiggy12Design Hotel Booking SystemAgoda, Booking.com, Airbnb13Design a Cab Booking System (LLD)Uber, Ola14Design a File SystemMicrosoft, Amazon15Design an Online Shopping CartAmazon, Flipkart, Adobe16Design a Stack Overflow / Q&A SystemAdobe, Microsoft17Design a Calendar / Meeting SchedulerMicrosoft, Google18Design a Task Scheduler / TODO AppAmazon, Microsoft19Design Connection PoolJPMorgan, PayPal, Adobe20Design a Cache with TTL & EvictionAmazon, Microsoft, Adobe
+Tier 3 — Less Frequent but Asked ⭐
+#QuestionCompanies21Design an In-Memory DatabaseAmazon, Adobe22Design a Rate Limiter (LLD style)Stripe, PayPal, Agoda23Design Traffic Signal SystemAmazon, Microsoft24Design a Restaurant Management SystemAmazon, Adobe25Design Coffee Vending MachineAdobe, Microsoft26Design Online Polling System / VotingMicrosoft, Amazon27Design a Notification Service (Observer pattern)Amazon, Adobe28Design a Music Player (Spotify-like LLD)Spotify, Amazon29Design a Trading Engine / Order MatchingJPMorgan, Goldman Sachs30Design Distributed ID Generator (Snowflake)Twitter, Amazon
+
+Company-Specific Hot Picks
+Amazon
+Parking Lot, LRU Cache, URL Shortener, Rate Limiter, Notification System, Amazon-like E-commerce, BookMyShow
+Microsoft
+Elevator, Parking Lot, LRU Cache, File System, Calendar Scheduler, Snake Game
+Google
+URL Shortener, Web Crawler, Google Docs, Typeahead, YouTube, Google Drive
+Facebook / Meta
+News Feed, Messenger, Instagram, Typeahead, Notification System
+Adobe
+Parking Lot, LRU Cache, Elevator, BookMyShow, Vending Machine, Splitwise, Logger
+Microsoft / JPMorgan / Goldman Sachs / PayPal
+ATM, Logger, Connection Pool, Trading System, Rate Limiter, Payment Gateway
+Agoda / Booking.com / Airbnb
+Hotel Booking, Rate Limiter, Search System, Booking flow with concurrency
+Uber / Lyft / Ola
+Ride-sharing system, Driver-matching algorithm, ETA service, Surge pricing
+Netflix / Spotify
+Video/Audio streaming, Recommendation system, CDN architecture
+
+Core Concepts to Master (regardless of question)
+Whatever question you get, FAANG and product companies expect strong knowledge of these building blocks. Scalability fundamentals like horizontal vs vertical scaling, load balancers, and stateless services come up everywhere. Database design covers SQL vs NoSQL trade-offs, sharding, replication, indexing, and CAP theorem. Caching strategies include cache-aside, write-through, write-back, eviction policies (LRU/LFU), and where to place caches. Messaging involves queues (Kafka, RabbitMQ, SQS), pub-sub patterns, and event-driven architecture. Consistency models like strong vs eventual consistency and consensus algorithms (Raft, Paxos) appear in senior interviews. Finally, reliability concepts like rate limiting, circuit breakers, retries with exponential backoff, and idempotency are tested heavily at PayPal, JPMorgan, and Agoda.
+LLD Concepts to Master
+For LLD specifically, master the SOLID principles (especially Single Responsibility and Open/Closed), the most common design patterns (Singleton, Factory, Strategy, Observer, Decorator, Builder, Adapter, State), and how to model real-world entities into classes with clear responsibilities. Always think about extensibility: "If I had to add a new feature later, would I need to modify existing code or just add new classes?"
+How to Approach Any System Design Question
+Use this framework every time: clarify requirements (functional + non-functional, scale, QPS), define APIs, estimate capacity (storage, bandwidth, QPS), sketch high-level architecture (load balancer → app servers → cache → DB), deep-dive into one or two components the interviewer cares about, then discuss trade-offs and bottlenecks. Always think out loud and ask clarifying questions — interviewers care about the process, not just the final answer.
+
+My Recommended Study Order
+Start with URL Shortener since it teaches almost every core concept (hashing, DB design, caching, scaling reads/writes). Move to Rate Limiter and LRU Cache which appear in nearly every interview. Then tackle Twitter/News Feed and WhatsApp/Chat since they teach feed generation, fan-out, and real-time communication. For LLD, start with Parking Lot (the canonical LLD question) followed by Elevator, Library Management, and Splitwise. Practice each by drawing the architecture and writing class diagrams on paper or a whiteboard tool before looking at solutions.
