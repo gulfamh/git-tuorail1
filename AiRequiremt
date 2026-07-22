@@ -1,0 +1,28 @@
+
+	•	Design and build production-grade AI platform services — LLM gateways, MCP
+servers, and agent orchestration frameworks
+	•	Lead the design and implementation of Tekion's AI gateway — a unified
+abstraction layer for multi-provider LLM access with intelligent routing, fallback, cost optimization, token budgeting, and comprehensive observability
+	•	Design and implement MCP (Model Context Protocol) infrastructure
+	•	Design agentic AI patterns — multi-step reasoning workflows, tool
+orchestration, guardrails, and human-in-the-loop escalation paths
+	•	Experience in developing large-scale cloud-native applications
+	•	Strong understanding of LLM fundamentals
+	•	Experience with or strong knowledge of MCP (Model Context Protocol) —
+designing tool schemas, building MCP servers, tool discovery, and integrating
+MCP into agentic workflows
+	•	Understanding of AI gateway architecture — multi-provider LLM routing,
+semantic caching, load balancing, token tracking, cost allocation, fallback
+chains, and request/response logging
+	•	Familiarity with agentic AI frameworks — LangChain/LangGraph, LlamaIndex,
+CrewAI, OpenAI Agents SDK, or similar orchestration tools
+	•	Experience with LLM observability and evaluation — tracing (LangSmith,
+OpenTelemetry), LLM-as-judge evaluation, cost and latency monitoring
+	•	Understanding of AI safety and guardrails — input/output validation, PII
+detection, content filtering, and hallucination mitigation
+
+AI & Technical Expertise: Practical understanding of Agentic AI, LLMs, RAG, MCP, Prompt Engineering, Python, APIs, cloud platforms, and deployment fundamentals.
+
+
+
+
